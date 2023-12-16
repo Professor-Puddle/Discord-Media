@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Thumbnail image/gif -->
+    <meta property="og:image" content="https://raw.githubusercontent.com/Professor-Puddle/Discord-Media/main/Media-Files/Thumbnail.png">
+    <meta property="og:type" content="video.other">
+
+    <!-- Video dimensions -->
+    <meta property="og:video:height" content="439">
+    <meta property="og:video:width" content="784">
+
+    <script>
+      // List of videos to randomly choose from
+      var videos = [
+        "https://cdn.discordapp.com/attachments/693770759134511114/788852168793784340/video0-40.mp4",
+        "https://cdn.discordapp.com/attachments/940152161898233856/940940736776507402/VID-20211103-WA0008.mp4",
+        "https://cdn.discordapp.com/attachments/940152161898233856/940940910676570113/2_5217578944659722275.mp4"
+        // Add more video URLs here
+      ];
+
+      // Function to randomly select a video
+      function chooseRandomVideo() {
+        var randomIndex = Math.floor(Math.random() * videos.length);
+        return videos[randomIndex];
+      }
+
+      // Redirect to the randomly selected video
+      window.onload = function() {
+        var selectedVideo = chooseRandomVideo();
+        window.location.href = selectedVideo;
+      };
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
